@@ -2,7 +2,11 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const BookCard = ({ book }) => {
+interface bookCardProps {
+    book: IBook;
+}
+
+const BookCard = ({ book }: bookCardProps) => {
     if (!book) return null;
 
     const {
