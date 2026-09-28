@@ -61,7 +61,7 @@ const BookDetailsPage = async ({ params }: BookDetailsPageProps) => {
             {/* Single Grid Container with Same Height Stretch */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-stretch">
                 
-                {/* Left Side: Book Cover Container (Matching height with right side) */}
+                {/* Left Side: Book Cover Container  */}
                 <div className="bg-[#1313130d] rounded-2xl p-8 lg:p-12 flex justify-center items-center h-full min-h-[450px]">
                     <div className="relative w-full h-full max-w-[300px] min-h-[380px]">
                         <Image
@@ -70,8 +70,7 @@ const BookDetailsPage = async ({ params }: BookDetailsPageProps) => {
                             fill
                             priority
                             sizes="(max-width: 1024px) 100vw, 50vw"
-                            className="object-contain drop-shadow-xl"
-                            unoptimized
+                            className="object-contain drop-shadow-xl"                           
                         />
                     </div>
                 </div>

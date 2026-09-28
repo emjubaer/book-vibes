@@ -21,6 +21,7 @@ const Navbar = () => {
                                     Home
                                 </Link>
                             </li>
+                            <li><Link href="/books" className="text-gray-600">Books</Link></li>
                             <li><Link href="/listed-books" className="text-gray-600">Listed Books</Link></li>
                             <li><Link href="/pages-to-read" className="text-gray-600">Pages to Read</Link></li>
                         </ul>
@@ -41,6 +42,11 @@ const Navbar = () => {
                         <li>
                             <Link href="/" className="border border-[#23BE0A] text-[#23BE0A] font-semibold px-4 py-2 rounded-lg hover:bg-transparent hover:border-[#23BE0A]">
                                 Home
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="/books" className="text-gray-600 hover:text-black hover:bg-transparent">
+                                 Books
                             </Link>
                         </li>
                         <li>
