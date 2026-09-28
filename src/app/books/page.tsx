@@ -16,7 +16,7 @@ const page = async () => {
             {/* Centered Heading Section */}
             <div className="text-center max-w-2xl mx-auto mb-12">
                 <h1 className="text-3xl md:text-4xl font-bold font-serif text-[#131313] mb-4">
-                    Explore Our All Books List
+                    Explore Our All Books
                 </h1>
                 <p className="text-gray-600 text-base md:text-sm">
                     Discover amazing stories, timeless classics, and inspiring books from talented authors.
