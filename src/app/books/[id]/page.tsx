@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import ReadButton from '@/app/components/book-details/ReadButton';
+import WishListButton from '@/app/components/book-details/WishListButton';
 
 interface IBook {
     bookId: number;
@@ -144,9 +145,7 @@ const BookDetailsPage = async ({ params }: BookDetailsPageProps) => {
                     <div className="flex items-center gap-4 pt-4">
                         <ReadButton  book={book} />
 
-                        <button className="btn bg-[#59C6D2] hover:bg-[#4bb5c1] text-white font-semibold border-none px-7 rounded-xl min-h-0 h-12 normal-case">
-                            Wishlist
-                        </button>
+                        <WishListButton book={book} />
                     </div>
 
                 </div>

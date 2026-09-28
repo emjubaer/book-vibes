@@ -1,31 +1,21 @@
 'use client';
 import BooksContext from '@/app/context/BooksContext';
 import React, { useContext } from 'react';
-import { Bounce, toast } from 'react-toastify/unstyled';
+import { toast } from 'react-toastify';
 
 interface ReadButtonProps {
     book: IBook;
 }
 
 const ReadButton = ({ book }: ReadButtonProps) => {
-    const { readBooks, setReadBooks } = useContext(BooksContext);
+    const { setReadBooks } = useContext(BooksContext);
 
     const handleReadClick = () => {
 
         console.log('Book marked as read:', book);
-        setReadBooks([...readBooks, book]);
+        setReadBooks((currentBooks) => [...currentBooks, book]);
         // alert(`Book marked as read: ${book.bookName}`);
-        toast.success('Book marked as read', {
-            position: "top-right",
-            autoClose: 5000,
-            hideProgressBar: false,
-            closeOnClick: false,
-            pauseOnHover: true,
-            draggable: true,
-            progress: undefined,
-            theme: "light",
-            transition: Bounce,
-        });
+        toast.success('Book marked as read');
     }
 
     return (
