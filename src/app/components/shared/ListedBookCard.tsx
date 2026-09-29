@@ -1,4 +1,3 @@
-import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -26,8 +25,7 @@ const ListedBookCard = ({ book }: { book: IBook }) => {
                         alt={bookName}
                         fill
                         priority
-                        className="object-contain drop-shadow-md"
-                        unoptimized
+                        className="object-contain drop-shadow-md"                    
                     />
                 </div>
             </div>

@@ -9,7 +9,7 @@ const ListedBooks = () => {
     const [sortBy, setSortBy] = useState<string>('');
 
     // Dynamic Sort Helper
-    const sortBooks = (booksList: any[]) => {
+    const sortBooks = (booksList: IBook[]) => {
         if (!booksList) return [];
         const books = [...booksList];
         if (sortBy === 'rating') {
