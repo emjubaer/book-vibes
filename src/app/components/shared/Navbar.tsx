@@ -32,7 +32,7 @@ const Navbar = () => {
                             <svg
                                 aria-label="Menu"
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-6 w-6"
+                                className="h-5 w-5"
                                 fill="none"
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
@@ -48,7 +48,7 @@ const Navbar = () => {
 
                         <ul
                             tabIndex={0}
-                            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[100] mt-3 w-52 p-2 shadow-lg gap-2"
+                            className="menu menu-sm dropdown-content bg-[#f8f1f1] rounded-box z-[100] mt-3 w-52 p-2 shadow-lg gap-2"
                         >
                             {navItems.map((item) => {
                                 const isActive = pathname === item.href;
@@ -83,7 +83,7 @@ const Navbar = () => {
 
                         <Link
                             href="/"
-                            className="text-2xl font-bold text-black tracking-tight"
+                            className="text-2xl font-semibold md:font-bold text-black tracking-tight"
                         >
                             Book Vibe
                         </Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
                         Sign In
                     </button>
 
-                    <button className="btn bg-[#59C6D2] hover:bg-[#4bb5c1] text-white font-semibold border-none px-6 rounded-lg normal-case min-h-0 h-11">
+                    <button className="btn bg-[#59C6D2] hover:bg-[#4bb5c1] text-white font-semibold border-none px-4 md:px-6 rounded-lg normal-case min-h-0 h-11">
                         Sign Up
                     </button>
                 </div>
