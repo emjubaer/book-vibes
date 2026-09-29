@@ -24,11 +24,16 @@ interface BookDetailsPageProps {
 }
 
 const getBooks = async (): Promise<IBook[]> => {
-    const res = await fetch('http://localhost:3000/booksData.json', {
-        cache: 'no-store'
-    });
-    const data = await res.json();
-    return data;
+    try {
+        const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/booksData.json`, {
+            cache: 'no-store'
+        });
+        const data = await res.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching books:', error);
+        return [];
+    }
 };
 
 const BookDetailsPage = async ({ params }: BookDetailsPageProps) => {
